@@ -1,0 +1,461 @@
+/*
+Theme Name: Bibi Bootstrap
+Theme URI: https://afterimagedesigns.com/wp-bootstrap-starter/
+Author: Mike Cho
+Author URI: https://mikecho.dev
+Description:  The best WordPress starter theme based on the most powerful frameworks in the world: "_s" (by Automattic, the main people behind WordPress development), Twitter Bootstrap (the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web) and Font Awesome (or Fontawesome, a full suite of 675+ pictographic icons for easy scalable vector graphics on websites). This theme, like WordPress, is licensed under the GPL. You can use this theme as base for your next WordPress theme project and you are allowed to remove the link at the footer or do whatever you want. Your feedback on how we can continuously improve this WordPress Starter Theme Bootstrap will be highly appreciated. Page templates includes Right-sidebar (default page template), Left-Sidebar, Full-Width, Blank with container, Blank without container Page. Other features - Currently using Bootstrap v4.0.0 , Widgetized footer area, WooCommerce ready, Compatible with Contact Form 7, Compatible with Visual Composer, Compatible with Elementor Page Builder. This theme will be an active project which we will update from time to time. Check this page regularly for the updates.
+Version: 3.3.7
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: wp-bootstrap-starter-child
+Template: wp-bootstrap-starter
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Tested up to: 5.4
+Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
+*/
+/* 
+heading: #1c1b1b;
+gray: #6a6a6a; (phone)
+ /* */ 
+
+ body {
+     padding-top: 131.6px;
+     padding-top: 100.6px;
+ }
+ /* h1, h2, h3 {
+     font-family: 'Montserrat', sans-serif !important;
+ } */
+ .bibi-logo-img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.primary-color {
+    color: var(--primary);
+    color: var(--dark);
+    color: var(--gray-dark);
+}
+
+#masthead .navbar #main-nav #menu-main-nav.navbar-nav .menu-item .nav-link {
+    color: #1c1b1b;
+}
+
+#bibi-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+/* note: underline classes is added to nav anchor links through bibi_bootstrap_add_anchor_link_class */
+
+.nav-link.underline:hover {
+    text-decoration: underline;
+}
+.current-menu-item .nav-link.underline {
+    text-decoration: underline;
+}
+
+.section-p {
+    max-width: 420px;
+    color: var(--gray-dark);
+    /* margin: 0 auto; */
+}
+#widget-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* COMPANY widgeht */
+
+#menu-company .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+}
+#menu-company .nav-link:hover {
+    text-decoration: underline;
+}
+/* NEWSLETTER widget */
+
+#custom_html-3 .newsletter-input {
+    width: 100%;
+    display: block;
+    padding: .7rem .8rem;
+    border-radius: 0;
+    line-height: normal;
+    resize: none;
+    border: 1px solid #ddd;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+#custom_html-3 .newsletter-input:focus {
+    outline: none;
+    border: 1px solid var(--primary);
+}
+#custom_html-3 .newsletter-submit {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .9rem 1.8rem;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius:0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* CONTACT page form */
+
+#post-44 .entry-header .entry-title {
+    text-align: center;
+    margin-bottom: 4rem;
+    border-bottom: none;
+}
+#field_qh4icy, #field_ocfup1, #field_29yf4d, #field_e6lis6 {
+    /* inputs in contact form */
+    width: 100%;
+    display: block;
+    padding: .7rem .8rem;
+    border-radius: 0;
+    line-height: normal;
+    resize: none;
+    border: 1px solid #ddd;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+#frm_submit .frm_button_submit {
+    /* submit button in form */
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .9rem 1.8rem;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius:0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 7rem;
+    width: 100%;
+}
+#field_9jv0r1 {
+    /* textarea in form */
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    line-height: normal;
+    resize: none;
+    border: 1px solid #ddd;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* Shop */
+
+.woocommerce ul.products li.product .button {
+    border-radius: 0;
+}
+.woocommerce ul.products li.product .price {
+    color: var(--gray);
+}
+/* Woocommerce Sidebar */
+
+.product-categories .nav-item .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+}
+.product-categories .nav-item .nav-link:hover {
+    text-decoration: underline;
+}
+.widget.woocommerce {
+    margin-bottom: 4rem;
+}
+
+.widget-title {
+    margin-bottom: 1.5rem;
+}
+.widget .product-categories .nav-item .nav-link {
+    font-weight: 700;
+}
+.widget.widget_search label {
+    display: block;
+}
+.widget.widget_search .search-field.form-control {
+    width: 100%;
+    display: block;
+    padding: .7rem .8rem;
+    border-radius: 0;
+    line-height: normal;
+    resize: none;
+    border: 1px solid #ddd;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.widget.widget_search .search-submit {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .9rem 1.8rem;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius:0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 7rem;
+    width: 100%;
+}
+
+/* Cart */
+
+#cart-header {
+    font-size: 1.5rem;
+}
+ 
+.wc-proceed-to-checkout .checkout-button.button.alt.wc-forward {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .9rem 1.8rem;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius:0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 7rem;
+    width: 100%;
+}
+.woocommerce table.shop_table {
+    border-radius: 0;
+}
+.woocommerce-cart-form .woocommerce-cart-form__contents .actions > .coupon > #coupon_code.input-text {
+    width: 150px;
+}
+.woocommerce-cart-form .woocommerce-cart-form__contents .actions > .coupon > #coupon_code.input-text + .button {
+    margin-left: 4.6rem;
+    border-radius: 0;
+    height: 35px;
+    width: 150px;
+}
+.woocommerce .cart-collaterals .cart_totals h2 {
+    font-size: 1.5rem;
+}
+/* Checkout */
+.col2-set .col-12 {
+    padding: 0;
+}
+/* input rows */
+.woocommerce form .form-row {
+    display: block;
+}
+/* inputs */
+.woocommerce form .form-row .input-text {
+    padding: .7rem .8rem;
+    border-radius: 0;
+    line-height: normal;
+    resize: none;
+    border: 1px solid #ddd;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+/* order button */
+ #place_order.button.alt {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .9rem 1.8rem;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius:0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 7rem;
+    width: 100%;
+}
+.select2-selection.select2-selection--single {
+    border-radius: 0;
+}
+.woocommerce form .form-row.woocommerce-validated .select2-container, .woocommerce form .form-row.woocommerce-validated input.input-text, .woocommerce form .form-row.woocommerce-validated select {
+    border-color: #ddd;
+}
+.woocommerce form .form-row input.input-text:focus {
+    border-color: #5d5a5a;
+}
+.woocommerce-input-wrapper .form-control:focus {
+    border-color: #5d5a5a;
+    box-shadow: none;
+}
+.woocommerce-billing-fields__field-wrapper .form-row .control-label, .woocommerce-additional-fields__field-wrapper .form-row .control-label, .product-name, .cart-subtotal, .order-total, .product-total {
+    color: var(--primary);
+}
+/* Search form */
+
+.search_submit {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .9rem 1.8rem;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius:0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 7rem;
+    width: 100%;
+}
+.s {
+    width: 100%;
+    display: block;
+    padding: .7rem .8rem;
+    border-radius: 0;
+    line-height: normal;
+    resize: none;
+    border: 1px solid #ddd;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.woocommerce div.product form.cart .button  {
+    vertical-align: middle;
+    float: left;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .9rem 1.8rem;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius:0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 7rem;
+    width: 100%;
+}
+.woocommerce div.product form.cart .button:hover {
+     
+    background-color: var(--primary);
+    color: var(--white);
+     
+}
+
+/* Single Product Page */
+
+.woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item.button-variable-item {
+    width: auto;
+    border-radius: 0;
+    margin-right: 1rem;   
+}
+
+.woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item.button-variable-item .variable-item-span {
+    padding: 6px 10px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--primary);
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1.65;
+    font-style: normal;
+    vertical-align: center;
+}
+
+.woocommerce-variation-add-to-cart.variations_button
+.value.woo-variation-items-wrapper {
+    margin-top: 1rem;
+}
+
+.summary.entry-summary {
+    padding: 2rem 2rem;
+}
+.product_title.entry-title {
+    font-size: 1.5rem;
+}
+.variations_form.cart {
+    margin-top: 2rem;
+}
+.single-product-hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.woocommerce div.product form.cart div.quantity .input-text {
+     padding: 10px;
+     margin-bottom: 2rem;
+}
+.woocommerce div.product form.cart .variations label {
+    margin-left: 0;
+}
+/* remove thumbnail images under main image */
+.woocommerce div.product div.images .flex-control-thumbs li img {
+    display: none;
+}
+
+.woocommerce div.product form.cart .variations {
+    margin-bottom: 0;
+}
+
+.value.woo-variation-items-wrapper {
+    margin-bottom: 0;
+}
+.woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item.button-variable-item {
+    padding: 0;
+}
+.woocommerce-variation-add-to-cart .single_add_to_cart_button.button {
+    margin-top: 1.52rem;
+}
+@media only screen and (max-width: 800px) {
+    body {
+        padding-top: 80px;
+    }
+     .navbar-brand {
+        margin-right: 0rem;
+}
+  }
+@media only screen and (max-width: 400px) {
+    body {
+        padding-top: 80px;
+    }
+   
+    #featured .img-fluid {
+      margin-bottom: 1rem;
+    }
+  }

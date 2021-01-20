@@ -1,0 +1,357 @@
+/*
+Theme Name: Bibi Bootstrap
+Theme URI: https://afterimagedesigns.com/wp-bootstrap-starter/
+Author: Mike Cho
+Author URI: https://mikecho.dev
+Description:  The best WordPress starter theme based on the most powerful frameworks in the world: "_s" (by Automattic, the main people behind WordPress development), Twitter Bootstrap (the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web) and Font Awesome (or Fontawesome, a full suite of 675+ pictographic icons for easy scalable vector graphics on websites). This theme, like WordPress, is licensed under the GPL. You can use this theme as base for your next WordPress theme project and you are allowed to remove the link at the footer or do whatever you want. Your feedback on how we can continuously improve this WordPress Starter Theme Bootstrap will be highly appreciated. Page templates includes Right-sidebar (default page template), Left-Sidebar, Full-Width, Blank with container, Blank without container Page. Other features - Currently using Bootstrap v4.0.0 , Widgetized footer area, WooCommerce ready, Compatible with Contact Form 7, Compatible with Visual Composer, Compatible with Elementor Page Builder. This theme will be an active project which we will update from time to time. Check this page regularly for the updates.
+Version: 3.3.7
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: wp-bootstrap-starter-child
+Template: wp-bootstrap-starter
+Requires at least: 4.7
+Requires PHP: 5.2.4
+Tested up to: 5.4
+Tags: blog, custom-menu, featured-images, threaded-comments, translation-ready, right-sidebar, custom-background, e-commerce, theme-options, sticky-post, full-width-template
+*/
+/* 
+heading: #1c1b1b;
+gray: #6a6a6a; (phone)
+ /* */ 
+
+:root {
+    --primary: #1c1b1b;
+    --white: white;
+}
+h1, h2, h3, h4, h5, h6, p, a {
+    color: var(--primary);
+}
+
+/* don't show the edit link */
+.edit-link {
+    display: none;
+}
+ 
+ 
+header#masthead {
+    /* box-shadow: 0 -1px #ddd inset; */
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+    width: 100%;
+    /* position: fixed; */
+    /* top: 0;
+    left: 0; */
+}
+ .navbar.navbar-expand-xl {
+     flex-direction: column;
+
+ }
+ .bibi-logo-img {
+     height: 5rem;
+     width: 5rem;
+ }
+ .spacer {
+     height: 2rem;
+ }
+ #content.site-content {
+     margin-top: 7.5rem;
+     padding-top: 0rem;
+     padding-bottom: 0rem;
+ }
+ #menu-main-nav.navbar-nav {
+  
+ }
+ #content.site-content .container {
+    margin: 0;
+    padding: 0;
+ }
+ .menu-item.nav-item {
+     margin-right: 0rem;
+     padding: 0 1.5rem;
+ }
+ .menu-item.nav-item:hover {
+      text-decoration: underline;
+ }
+#main-nav .navbar-nav .menu-item.nav-item .nav-link {
+    color: var(--primary);
+    font-size: .8rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    --webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+}
+.welcome-content {
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 425px;
+}
+.section-heading {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    --webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.65;
+}
+.section-secondary-heading, #footer-widget .widget-title {
+    font-size: .8rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    --webkit-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.65;
+}
+.section-p {
+    margin-bottom: 2rem;
+}
+.bibi-link {
+    align-self: center;   
+    text-decoration: underline;
+}
+.bibi-link::after {
+    content: ">";
+}
+#primary.content-area {
+    margin: 0 auto;
+}
+.header-img-container {
+    width: 100vw;
+    height: 70vh;
+    height: auto;
+}
+ 
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Four Images Row */
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-row-four {
+    display: flex;
+   justify-content: center;
+    column-gap: .333rem;
+}
+ 
+@media only screen and (max-width: 900px) {
+    .img-row-four {
+        flex-wrap:wrap;
+    }
+  }
+
+
+/* Contact Page Styling */
+
+#contact.content-area {
+    margin-top: 7.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 710px;
+}
+#post-44 .entry-header .entry-title {
+    text-align: center;
+    margin-bottom: 4rem;
+    border-bottom: none;
+}
+#field_qh4icy, #field_ocfup1, #field_29yf4d, #field_e6lis6 {
+    /* inputs in contact form */
+    width: 100%;
+    display: block;
+    padding: .7rem .8rem;
+    border-radius: 0;
+    line-height: normal;
+    resize: none;
+    border: 1px solid #ddd;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+#frm_submit .frm_button_submit {
+    /* submit button in form */
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .9rem 1.8rem;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius:0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 7rem;
+    width: 100%;
+}
+#field_9jv0r1 {
+    /* textarea in form */
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    line-height: normal;
+    resize: none;
+    border: 1px solid #ddd;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+/* Footer */
+
+#footer-widget .container {
+    max-width: 100vw;
+    padding: 0 5rem;
+}
+#footer-widget .container .menu-item.nav-item, #footer-widget .container .menu-item.nav-item .nav-link {
+    padding: 0;
+}
+#footer-widget.row {
+    padding-top: 6rem;
+    border-top: 1px solid gainsboro;
+}
+#footer-widget .widget-title {
+    text-align: left;
+}
+#menu-company .nav-link {
+    margin-bottom: 1rem;
+}
+/* Newsletter Widget Form */
+#custom_html-3 .newsletter-input, #custom_html-3 .newsletter-submit {
+    display: block;
+    margin-bottom: 1rem;
+}
+#custom_html-3 .newsletter-input {
+    width: 100%;
+    display: block;
+    padding: .7rem .8rem;
+    border-radius: 0;
+    line-height: normal;
+    resize: none;
+    border: 1px solid #ddd;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+#custom_html-3 .newsletter-input:focus {
+    outline: none;
+    border: 1px solid var(--primary);
+}
+#custom_html-3 .newsletter-submit {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .9rem 1.8rem;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius:0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+#custom_html-3 .newsletter-submit.hover {
+
+}
+
+#colophon.site-footer {
+    border: none;
+    padding: 0 5rem;
+}
+#colophon .container.pt-3 {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 400px) {
+    .container .row {
+        margin: 0;
+    }
+    header#masthead {
+        padding: 0;
+    }
+    #masthead .container {
+        padding: 0;
+        max-width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .navbar.navbar-expand-xl {
+        max-width: 100vw;
+    }
+    header#masthead {
+        /* padding: 0; */
+        max-width: 100vw;
+        /* margin-bottom: 6rem;S */
+    }
+    .navbar .navbar-brand {
+        margin-right: 0;
+    }
+    #content.site-content {
+        /* margin-top: 200px; */
+        /* margin-top: 0; */
+        margin-top: 4rem;
+    }
+    .header-img-container {
+        /* margin-top: 600px; */
+    }
+
+    #welcome {
+        max-width: 100vw;
+        padding: 0 2rem;
+    }
+    .welcome-content {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* four-boxes */
+
+    .section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-row-four {
+        display: flex;
+       justify-content: left;
+        gap: .333rem;
+    }
+    .img-box {
+        max-width: 100vw;
+    }
+    /* contact page */
+    #contact.content-area {
+        width: 100%;
+    }
+    
+  }

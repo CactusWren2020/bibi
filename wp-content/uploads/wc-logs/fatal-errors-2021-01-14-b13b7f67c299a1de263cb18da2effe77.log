@@ -1,0 +1,16 @@
+2021-01-14T19:53:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function bibi_bootstrap_add_anchor_link_class(), 1 passed in C:\Program Files\Ampps\www\bibi\wp-includes\class-wp-hook.php on line 289 and exactly 3 expected in C:\Program Files\Ampps\www\bibi\wp-content\themes\bibi-bootstrap\functions.php:101
+Stack trace:
+#0 C:\Program Files\Ampps\www\bibi\wp-includes\class-wp-hook.php(289): bibi_bootstrap_add_anchor_link_class(Array)
+#1 C:\Program Files\Ampps\www\bibi\wp-includes\plugin.php(212): WP_Hook->apply_filters(Array, Array)
+#2 C:\Program Files\Ampps\www\bibi\wp-content\themes\wp-bootstrap-starter\inc\wp_bootstrap_navwalker.php(209): apply_filters('nav_menu_link_a...', Array, Object(WP_Post), Object(stdClass), 0)
+#3 C:\Program Files\Ampps\www\bibi\wp-includes\class-wp-walker.php(144): WP_Bootstrap_Navwalker->start_el('<li itemscope="...', Object(WP_Post), 0, Object(stdClass))
+#4 C:\Program Files\Ampps\www\bibi\wp-content\themes\wp-bootstrap-starter\inc\wp_bootstrap_navwalker.php(323): Walker->display_element(Object(W in C:\Program Files\Ampps\www\bibi\wp-content\themes\bibi-bootstrap\functions.php on line 101
+
+2021-01-14T19:53:18+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function bibi_bootstrap_add_anchor_link_class(), 1 passed in C:\Program Files\Ampps\www\bibi\wp-includes\class-wp-hook.php on line 289 and exactly 3 expected in C:\Program Files\Ampps\www\bibi\wp-content\themes\bibi-bootstrap\functions.php:101
+Stack trace:
+#0 C:\Program Files\Ampps\www\bibi\wp-includes\class-wp-hook.php(289): bibi_bootstrap_add_anchor_link_class(Array)
+#1 C:\Program Files\Ampps\www\bibi\wp-includes\plugin.php(212): WP_Hook->apply_filters(Array, Array)
+#2 C:\Program Files\Ampps\www\bibi\wp-content\themes\wp-bootstrap-starter\inc\wp_bootstrap_navwalker.php(209): apply_filters('nav_menu_link_a...', Array, Object(WP_Post), Object(stdClass), 0)
+#3 C:\Program Files\Ampps\www\bibi\wp-includes\class-wp-walker.php(144): WP_Bootstrap_Navwalker->start_el('<li itemscope="...', Object(WP_Post), 0, Object(stdClass))
+#4 C:\Program Files\Ampps\www\bibi\wp-content\themes\wp-bootstrap-starter\inc\wp_bootstrap_navwalker.php(323): Walker->display_element(Object(W in C:\Program Files\Ampps\www\bibi\wp-content\themes\bibi-bootstrap\functions.php on line 101
+

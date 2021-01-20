@@ -1,0 +1,72 @@
+/* login screen */
+
+body.login {
+    background-color: white;
+}
+.login h1 a {
+    background-image: url('http://127.0.0.1/bibi/wp-content/uploads/2021/01/cropped-BiBi-Body-Logo-1-T.png');
+    color: black;
+}
+body.login div#login form#loginform {
+    padding: 5rem 3rem;
+}
+body.login div#login form#loginform label {
+    font-family: 'Montserrat', sans-serif;
+    /* margin-bottom: 1.5rem;  */
+}
+.forgetmenot {
+        /* margin-top: 1.5rem; */
+}
+/* checkbox */
+body.login div#login form#loginform #rememberme {
+    border-radius: 0;
+}
+body.login div#login form#loginform #rememberme:checked::before {
+    /* content: ''; checkbox check*/
+}
+body.login div#login form#loginform p.submit input#wp-submit {
+    background-color: var(--primary);
+    background-color: black;
+    color: var(--white);
+    color: white;
+    padding: .9rem 1.8rem;
+    line-height: normal;
+    border: 1px solid transparent;
+    border-radius:0;
+    text-transform: uppercase;
+    font-size: .8rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    /* margin-bottom: 7rem; */
+    margin-top: 1.5rem;
+    width: 100%;
+}
+/* two input fields */
+
+body.login div#login form#loginform input#user_login, body.login div#login form#loginform input#user_pass {
+    width: 100%;
+    display: block;
+    padding: .7rem .8rem;
+    border-radius: 0;
+    line-height: normal;
+    resize: none;
+    border: 1px solid #ddd;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+body.login div#login form#loginform input#user_login:focus, body.login div#login form#loginform input#user_pass:focus, body.login div#login form#loginform #rememberme:focus {
+    box-shadow: 0 0 0 1px gray;
+}
+body.login div#login p#nav a, body.login div#login p#backtoblog a {
+    font-family: 'Montserrat', sans-serif;
+}
+body.login div#login .dashicons.dashicons-visibility {
+    color: black;
+}
